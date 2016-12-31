@@ -1,0 +1,16 @@
+<Component value="10px">Wow!</Component>
+<!-- this line doesn't work because parseFloat("10px") => 10 -->
+
+<!-- <Component value="'10px'">Wow!</Component>
+this line works because I escaped the number
+-->
+
+<script>
+    import Component from './component.html';
+
+    export default {
+        components: {
+            Component
+        }
+    };
+</script>
